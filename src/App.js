@@ -15,7 +15,7 @@ class App extends Component {
     }
 
     handleFormSubmit(item) {
-        var url = 'http://api.aladhan.com/timingsByCity?city='+ item +'&country=US&method=2';
+        var url = 'https://api.aladhan.com/timingsByCity?city='+ item +'&country=US&method=2';
           fetch(url)
             .then((response) => {
                 return response.json();
